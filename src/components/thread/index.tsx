@@ -362,7 +362,7 @@ export function Thread() {
                     height={32}
                   /> */}
                   <span className="text-xl font-semibold tracking-tight">
-                    Scan Bot
+                    ScandBot
                   </span>
                 </motion.button>
               </div>
@@ -431,7 +431,7 @@ export function Thread() {
               }
               footer={
                 <div className="sticky bottom-0 flex flex-col items-center gap-8 bg-white">
-                   {!chatStarted&&(<h1 className="font-bold text-3xl">ScanBot - AI Assistant</h1>)}
+                   {!chatStarted&&(<h1 className="font-bold text-3xl">ScandBot - AI Assistant</h1>)}
                   {!chatStarted && (
                     <div className="flex items-center gap-3">
                       {/* <LangGraphLogoSVG className="h-8 flex-shrink-0" />
