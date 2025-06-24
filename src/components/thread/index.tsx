@@ -274,7 +274,7 @@ export function Thread() {
             className="relative h-full"
             style={{ width: 300 }}
           >
-            <ThreadHistory />
+            {/* <ThreadHistory /> */}
           </div>
         </motion.div>
       </div>
@@ -307,7 +307,7 @@ export function Thread() {
         >
           {!chatStarted && (
             <div className="absolute top-0 left-0 z-10 flex w-full items-center justify-between gap-3 p-2 pl-4">
-              <div>
+              {/* <div>
                 {(!chatHistoryOpen || !isLargeScreen) && (
                   <Button
                     className="hover:bg-gray-100"
@@ -321,7 +321,7 @@ export function Thread() {
                     )}
                   </Button>
                 )}
-              </div>
+              </div> */}
               <div className="absolute top-2 right-4 flex items-center">
                 {/* <OpenGitHubRepo /> */}
               </div>
@@ -329,8 +329,8 @@ export function Thread() {
           )}
           {chatStarted && (
             <div className="relative z-10 flex items-center justify-between gap-3 p-2">
-              <div className="relative flex items-center justify-start gap-2">
-                <div className="absolute left-0 z-10">
+              <div className="relative flex items-center justify-center w-full gap-2">
+                {/* <div className="absolute left-0 z-10">
                   {(!chatHistoryOpen || !isLargeScreen) && (
                     <Button
                       className="hover:bg-gray-100"
@@ -344,7 +344,7 @@ export function Thread() {
                       )}
                     </Button>
                   )}
-                </div>
+                </div> */}
                 <motion.button
                   className="flex cursor-pointer items-center gap-2"
                   onClick={() => setThreadId(null)}
@@ -360,16 +360,16 @@ export function Thread() {
                   {/* <LangGraphLogoSVG
                     width={32}
                     height={32}
-                  />
+                  /> */}
                   <span className="text-xl font-semibold tracking-tight">
-                    Agent Chat
-                  </span> */}
+                    Scan Bot
+                  </span>
                 </motion.button>
               </div>
 
               <div className="flex items-center gap-4">
                 <div className="flex items-center">
-                  <OpenGitHubRepo />
+                  {/* <OpenGitHubRepo /> */}
                 </div>
                 <TooltipIconButton
                   size="lg"
@@ -431,6 +431,7 @@ export function Thread() {
               }
               footer={
                 <div className="sticky bottom-0 flex flex-col items-center gap-8 bg-white">
+                   {!chatStarted&&(<h1 className="font-bold text-3xl">ScanBot - AI Assistant</h1>)}
                   {!chatStarted && (
                     <div className="flex items-center gap-3">
                       {/* <LangGraphLogoSVG className="h-8 flex-shrink-0" />
@@ -476,7 +477,7 @@ export function Thread() {
                             form?.requestSubmit();
                           }
                         }}
-                        placeholder="Type your message..."
+                        placeholder="Ask about Scandlearn..."
                         className="field-sizing-content resize-none border-none bg-transparent p-3.5 pb-0 shadow-none ring-0 outline-none focus:ring-0 focus:outline-none"
                       />
 
